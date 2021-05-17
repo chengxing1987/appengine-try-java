@@ -1,18 +1,66 @@
 <!doctype html>
 <html>
   <head>
-    <title>App Engine Demo</title>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <title>Let's Save</title>
+	<style>
+		table, th, td {
+			border: 1px solid black;
+			border-collapse: collapse;
+			text-align: center;
+		}
+
+		table.center {
+			margin-left: auto; 
+			margin-right: auto;
+		}
+	</style>
   </head>
   <body>
-    <div id="result">Loading...</div>
-
-    <script>
-$(document).ready(function() {
-  $.getJSON('/demo', function(data) {
-    $('#result').html("Hello, " + data.name);
-  });
-});
-    </script>
+	<table class="center">
+		<tr>
+			<td rowspan='3'><img src="img/Bestco.png" alt="Bestco" width="200" height="40">
+			</td>
+			<td>Apple</td>
+			<td>$1/Pack</td>
+		</tr>
+		<tr>
+			<td>Tomato</td>
+			<td>$1/Pack</td>
+		</tr>
+		<tr>
+			<td>Watermelon</td>
+			<td>$1.99/Piece</td>
+		</tr>
+		<tr>
+			<td rowspan='6'><img src="img/sunny.jpg" alt="Bestco" width="120" height="60"></td>
+			<td>Bread</td>
+			<td>$1/Pack</td>
+		</tr>
+		<tr>
+			<td>Butter Cookies</td>
+			<td>$1.94/Pack</td>
+		</tr>
+		<tr>
+			<td>Bread Pack(4 Pieces)</td>
+			<td>$2.4/Pack</td>
+		</tr>
+		<tr>
+			<td>Cream Cake</td>
+			<td>$2.99/Piece</td>
+		</tr>
+		<tr>
+			<td>Crab</td>
+			<td>$3.99/Pack</td>
+		</tr>
+		<tr>
+			<td>Salmon</td>
+			<td>$0.99/LB</td>
+		</tr>
+		<tr>
+			<td><img src="img/TT.png" alt="Bestco" width="200" height="40"></td>
+			<td>Bread</td>
+			<td>$3/Pack</td>
+		</tr>
+	</table>
   </body>
 </html>
